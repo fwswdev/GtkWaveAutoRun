@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace GtkWaveSetup
 {
@@ -23,6 +22,8 @@ namespace GtkWaveSetup
             Console.WriteLine("GtkWave Auto-Setup for Win32 by Jeff");
             Console.WriteLine("===========================================");
             Console.ForegroundColor = origColor;
+
+            // Download
 
             using (var client = new WebClient())
             {
@@ -49,6 +50,10 @@ namespace GtkWaveSetup
                     }
                 }
             }
+
+            // Extract
+
+
             Console.Beep(); Console.Beep(); Console.Beep();
             Console.WriteLine("Done");
             Console.ReadKey();
