@@ -32,7 +32,7 @@ namespace GtkWaveSetup
         {
             var origColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("GtkWave AutoSetup/AutoRun v00.08.00 for Win32 by Jeff");
+            Console.WriteLine("GtkWave AutoSetup/AutoRun v00.08.01 for Win32 by Jeff");
             Console.WriteLine("===========================================");
             Console.ForegroundColor = origColor;
 
@@ -42,6 +42,12 @@ namespace GtkWaveSetup
             var lst = new List<UrlFilePair>();
             lst.Add(new UrlFilePair() { Filename = "gtkwave.exe.gz", Url = "http://www.dspia.com/gtkwave.exe.gz", DestPath = LOCAL_GTKW_PATH });
             lst.Add(new UrlFilePair() { Filename = "all_libs.tar.gz", Url = "http://www.dspia.com/all_libs.tar.gz", DestPath = LOCAL_GTKW_PATH });
+
+            // Create directory
+            if(Directory.Exists(LOCAL_GTKW_PATH)==false)
+            {
+                Directory.CreateDirectory(LOCAL_GTKW_PATH);
+            }
 
             // Download and extract
             using (var client = new WebClient())
