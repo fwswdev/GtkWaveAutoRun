@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtkWaveSetup", "GtkWaveSetup\GtkWaveSetup.csproj", "{FB6BDA06-DFD4-4F50-9D71-CE27AFA70263}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtkWaveAutoRun", "GtkWaveSetup\GtkWaveAutoRun.csproj", "{FB6BDA06-DFD4-4F50-9D71-CE27AFA70263}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,9 @@
-﻿using ICSharpCode.SharpZipLib.Core;
+﻿/* ===================================================================
+Author: Jeff
+License: http://unlicense.org/
+=================================================================== */
+
+using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.GZip;
 using ICSharpCode.SharpZipLib.Tar;
 using ICSharpCode.SharpZipLib.Zip;
@@ -27,7 +32,7 @@ namespace GtkWaveSetup
         {
             var origColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("GtkWave Auto-Setup for Win32 by Jeff");
+            Console.WriteLine("GtkWave AutoSetup/AutoRun v00.08.00 for Win32 by Jeff");
             Console.WriteLine("===========================================");
             Console.ForegroundColor = origColor;
 
